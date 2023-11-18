@@ -1,0 +1,81 @@
+@font-face {
+	font-family: redFive;
+	src: url(/fonts/redfive.regular.woff2);
+}
+
+:root {
+	font-family: redFive, sans-serif;
+	line-height: 1.5;
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background: linear-gradient(
+		to right,
+		hsla(207, 80%, 59%, 1) 0%,
+		hsla(344, 64%, 79%, 1) 50%,
+		hsla(343, 93%, 69%, 1) 100%
+	);
+	background-size: 500% auto;
+	animation: backdropFlow 5s ease-in-out infinite alternate;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	display: block;
+	max-width: 100vw;
+	text-align: center;
+	min-height: 100vh;
+}
+
+#app {
+	height: 32vh;
+	margin: 5rem 18rem;
+	padding-bottom: 29rem;
+	background: rgba(255, 255, 255, 0.15);
+	border: none !important;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 2rem 0 rgba(129, 129, 129, 0.37);
+}
+
+.title {
+	padding-top: 1.5rem;
+}
+
+.city-input {
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	padding: 0.5rem;
+	margin: 0.5rem 0.3rem;
+	background: rgba(255, 255, 255, 0.245);
+	border: none !important;
+	border-radius: 0.3rem;
+	box-shadow: 0 0.7rem 2rem 0 rgba(129, 129, 129, 0.37);
+}
+
+.search-btn {
+	font-family: "Rubik", sans-serif;
+	font-size: 0.9rem;
+	font-weight: 500;
+	padding: 0.5rem;
+	margin: 0.5rem 0.3rem;
+	border: none !important;
+	background: rgba(255, 255, 255, 0.245);
+	border-radius: 0.3rem;
+	box-shadow: 0 0.7rem 2rem 0 rgba(129, 129, 129, 0.37);
+}
+
+.search-btn:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.147);
+}
+
+@keyframes backdropFlow {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
